@@ -76,6 +76,21 @@
     <footer>
       <h2>Reach Out!</h2>
     </footer>
+
+    <script>
+        const nav = document.querySelector("nav");
+        let lastScrollY = window.scrollY;
+      
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 100) {
+            nav.classList.add("visible");
+          } else {
+            nav.classList.remove("visible");
+          }
+          lastScrollY = window.scrollY;
+        });
+      </script>
+      
   </main>
 </body>
 </html>

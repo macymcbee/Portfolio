@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const nav = document.querySelector("nav");
+        let lastScrollY = window.scrollY;
+      
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 100) {
+            nav.classList.add("visible");
+          } else {
+            nav.classList.remove("visible");
+          }
+          lastScrollY = window.scrollY;
+        });
+      </script>
+</body>
+</html>
