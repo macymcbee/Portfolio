@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - Macy McBee</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">about</a></li>
+        <li><a href="projects.html" class="active">projects</a></li>
+        <li><a href="resume.html">resume</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <img src="Flower.png" alt="Floral background" />
+    </div>
+  </header>
 
+  <main class="projects">
+    <h2>My Projects</h2>
+    <div class="project-gallery">
+      <div class="project-card">
+        <img src="image 37.png" alt="Project 1" />
+        <div class="overlay">Prescription Buddy</div>
+
+      </div>
+      <div class="project-card">
+        <img src="image 68.png" alt="Project 2" />
+        <div class="overlay">Flix.Education</div>
+      </div>
+      <div class="project-card">
+        <img src="project3.png" alt="Project 3" />
+      </div>
+    </div>
 
     <script>
         const nav = document.querySelector("nav");
@@ -22,5 +50,6 @@
           lastScrollY = window.scrollY;
         });
       </script>
+  </main>
 </body>
 </html>

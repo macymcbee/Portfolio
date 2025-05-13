@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
+
+/* About / home */
 body {
     font-family: "Alata", sans-serif;
     font-weight: 400;
@@ -125,3 +127,94 @@ body {
     color: #a4717a;
   }
   
+
+  /* Projects */
+
+
+nav a.active {
+    font-weight: normal;
+    text-decoration: underline;
+  }
+  
+  /* Projects section */
+
+  .projects {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .projects h2 {
+    color: #a4717a;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background-color: #e6e6e6;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .project-card {
+    position: relative;
+    background-color: #e6e6e6;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 180px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .project-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  /* Overlay Text */
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+  
+  .project-card:hover .overlay {
+    opacity: 1;
+  }
