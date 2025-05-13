@@ -199,12 +199,12 @@ nav a.active {
   }
   
   /* Overlay Text */
-  .overlay {
+  .overlay-prescription {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color:#99A69B;
     color: #fff;
     font-size: 0.9rem;
     padding: 0.5rem;
@@ -215,6 +215,26 @@ nav a.active {
     border-bottom-right-radius: 12px;
   }
   
-  .project-card:hover .overlay {
+  .overlay-flix {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#EFD9AA;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .project-card:hover .overlay-flix {
+    opacity: 1;
+  }
+
+  .project-card:hover .overlay-prescription{
     opacity: 1;
   }
