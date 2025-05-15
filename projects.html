@@ -8,48 +8,31 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">about</a></li>
-        <li><a href="projects.html" class="active">projects</a></li>
-        <li><a href="resume.html">resume</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <img src="Flower.png" alt="Floral background" />
-    </div>
+    <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#projects" class="active">projects</a></li>
+      <li><a href="#resume">resume</a></li>
+    </ul>
+  </nav>
   </header>
 
   <main class="projects">
     <h2>My Projects</h2>
     <div class="project-gallery">
       <div class="project-card">
-        <img src="image 37.png" alt="Project 1" />
+        <li><a href="buddy.html"><img src="image 37.png" alt="Project 1" /></a></li>
         <div class="overlay-prescription">Prescription Buddy</div>
 
       </div>
       <div class="project-card">
-        <img src="image 68.png" alt="Project 2" />
+        <li><a href="flix.html"><img src="image 68.png" alt="Project 2" /></a></li>
         <div class="overlay-flix">Flix.Education</div>
       </div>
       <div class="project-card">
         <img src="project3.png" alt="Project 3" />
       </div>
     </div>
-
-    <script>
-        const nav = document.querySelector("nav");
-        let lastScrollY = window.scrollY;
-      
-        window.addEventListener("scroll", () => {
-          if (window.scrollY > 100) {
-            nav.classList.add("visible");
-          } else {
-            nav.classList.remove("visible");
-          }
-          lastScrollY = window.scrollY;
-        });
-      </script>
   </main>
 </body>
 </html>
